@@ -12,7 +12,7 @@ body {
     height: 100vh;
     width: 100%;
 
-    background: #eeeeee;
+    background: #0b0530;
 
     display: flex;
     flex-direction: column;
@@ -24,6 +24,7 @@ body {
     height: 60%;
     width: 35%;
 
+    background: #fff;
     border-radius: 8%;
     box-shadow: 0px 6px 39px -10px #00000040;
 
@@ -42,11 +43,18 @@ body {
     color: #eee;
     background: linear-gradient(135deg, #ff325e, #c72b4d);
 
+    text-align: center;
+
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
+
+    .titleContainer i {
+        font-size: 1rem;
+        margin-left: 1rem;
+    }
 
 .inputs {
     /*border: solid lime;*/
@@ -74,7 +82,7 @@ body {
 .addToDo input {
     width: 60%;
 
-    background: #dfdede;
+    background: #f1f1f1;
     color: #4d4d4d;
 
     border-radius: 8px;
@@ -85,6 +93,7 @@ body {
 }
 
 .addToDo input, .addToDo button {
+    user-select: none;
     height: 100%;
     border: none;
     text-align: center;
@@ -94,23 +103,24 @@ body {
     width: 35%;
 
     background: #ff456e;
+    border-radius: 7px;
     color: #eee;
 
-    border-radius: 7px;
+    cursor: pointer;
 }
 
-.addToDo button:hover, .addToDo button:focus {
-    background: #c72b4d;
-}
+    .addToDo button:hover, .addToDo button:focus {
+        background: #c72b4d;
+    }
 
-.addToDo button:active {
-    background: #ff456e;
-}
+    .addToDo button:active {
+        background: #ff456e;
+    }
 
 .inputContainer {
     /*border: solid plum;*/
 
-    height: 80%;
+    height: 75%;
     width: 75%;
 
     overflow-y: scroll;
@@ -124,7 +134,7 @@ body {
 
 hr {
     width: 74%;
-    border: .1px solid #cecece;
+    border: .1px solid #e4e4e4;
     border-radius: 50px;
 }
 
@@ -133,9 +143,10 @@ hr {
     /*border: solid navy;*/
     border: 1px solid #dbdbdb;
 
-    background: #e6e6e6;
+    background: #f1f1f1;
 
     height: fit-content;
+    max-width: 95%;
     width: 95%;
 
     border-radius: 8px;
