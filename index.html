@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <title>Simple ToDo List</title>
+
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <link rel = "shortcut icon" href = "Shortcut Icon.png">
+
+            <link rel = "stylesheet" href = "styles.css">
+            <script src="https://kit.fontawesome.com/b1a0b78bd7.js" crossorigin="anonymous"></script>
+        </head>
+        <body>
+            
+            <a class = "link" href = "https://www.instagram.com/codewithemil/" target = "_blank"><h4>Made by: Emil</h4></a>
+
+            <div id = "mainBody">
+                <div class = "titleContainer">
+                    <h2 contenteditable="true">ToDo List</h2>
+                </div>
+                <div class = "inputs">
+                    <div class = "addToDo">
+                        <input type = "text" placeholder = "Write here! 🔥" id = "input">
+                        <button id = "addToDo">Add Item</button>
+                    </div>
+
+                    <hr>
+
+                    <ul class = "inputContainer">
+                        <!--We'll find the reminders here-->
+                            <li class="todo">
+                                <div class = "star">
+                                    <i class="starIcon icon grayIcon far fa-star"></i>
+                                </div>
+                                <div class = "todoInfo">
+                                    <h4>Wash Dishes</h4>
+                                    <i class="icon redIcon fas fa-times"></i>
+                                </div>
+                            </li>
+
+                            <li class="todo">
+                                <div class = "star">
+                                    <i class="starIcon icon grayIcon far fa-star"></i>
+                                </div>
+                                <div class = "todoInfo">
+                                    <h4>Do my bed</h4>
+                                    <i class="icon redIcon fas fa-times"></i>
+                                </div>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+
+            <script src = "app.js"></script>
+        </body>
+    </html>
