@@ -244,8 +244,9 @@ hr {
 
 .link:hover {
     text-decoration: underline;
+    color: #e4e4e4;
 }
 
-.link h4 {
-    color: #2a2a2a;
+.link h4, .link:visited h4 {
+    color: #e4e4e4;
 }
