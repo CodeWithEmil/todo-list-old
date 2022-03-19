@@ -1,9 +1,12 @@
 let container = document.querySelector(".inputContainer");
 let input = document.querySelector("input");
 let button = document.querySelector("button");
+let name = document.querySelector("#listName");
+let title = document.querySelector("title");
 
 var stars = document.querySelectorAll(".starIcon");
 let cross = document.querySelectorAll(".redIcon");
+
 
 button.addEventListener("click", createToDo);
 input.addEventListener("keydown", (e) => {
@@ -12,6 +15,16 @@ input.addEventListener("keydown", (e) => {
     }
 })
 
+name.addEventListener("click", () => {
+    setInterval(() => {
+        title.innerHTML = `${name.innerHTML} — Simple ToDo List`;
+        //console.log(name.innerHTML);
+    }, 1000);
+
+    if (name.innerHTML === "") {
+        name.innerHTML = "ToDo List"
+    }
+})
 
 
 

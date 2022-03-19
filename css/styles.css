@@ -12,7 +12,7 @@ body {
     height: 100vh;
     width: 100%;
 
-    background: #0b0530;
+    background: linear-gradient(45deg, #0b0530, #36407a);
 
     display: flex;
     flex-direction: column;
