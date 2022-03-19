@@ -6,6 +6,14 @@ var stars = document.querySelectorAll(".starIcon");
 let cross = document.querySelectorAll(".redIcon");
 
 button.addEventListener("click", createToDo);
+input.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+        createToDo();
+    }
+})
+
+
+
 
 function createToDo() {
     if(input.value == "") {
@@ -33,7 +41,12 @@ function createToDo() {
                 deleteTodo.classList.add("icon", "redIcon", "fas", "fa-times");
                 info.appendChild(deleteTodo);
 
-        input.value = null;
+                alert(`To-Do created with the value "${input.value}"`);
+
+        setTimeout(() => {
+            input.value = null;
+        }, 10);
+            
     }
 }
 
