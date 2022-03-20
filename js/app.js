@@ -17,7 +17,7 @@ input.addEventListener("keydown", (e) => {
 
 name.addEventListener("click", () => {
     setInterval(() => {
-        title.innerHTML = `${name.innerHTML} — Simple ToDo List`;
+        title.innerHTML = `${name.innerHTML} — Your To-Dos in one place`;
         //console.log(name.innerHTML);
     }, 1000);
 
@@ -54,7 +54,7 @@ function createToDo() {
                 deleteTodo.classList.add("icon", "redIcon", "fas", "fa-times");
                 info.appendChild(deleteTodo);
 
-                alert(`To-Do created with the value "${input.value}"`);
+                //alert(`To-Do created with the value "${input.value}"`);
 
         setTimeout(() => {
             input.value = null;
